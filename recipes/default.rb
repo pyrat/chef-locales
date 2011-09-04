@@ -7,9 +7,6 @@
 # MIT
 #
 
-sudo /usr/sbin/locale-gen en_GB.UTF-8
-sudo /usr/sbin/update-locale LANG=en_GB.UTF-8
-sudo ln -sf /usr/share/zoneinfo/Europe/London /etc/localtime
 
 execute "Generate the locale" do
   user "root"
