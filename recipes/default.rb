@@ -13,7 +13,7 @@ execute "Generate the locale" do
   command "/usr/sbin/locale-gen #{node[:locales][:server_locale]}"
 end
 
-execute "Set the locale."do
+execute "Set the locale." do
   user "root"
   command "/usr/sbin/update-locale LANG=#{node[:locales][:server_locale]}"
 end
